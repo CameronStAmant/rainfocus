@@ -1,7 +1,12 @@
-import "./App.scss";
+import styles from "./App.module.scss";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
-  return <h1>Hello, World!</h1>;
+  return (
+    <div className={styles.root}>
+      <Navigation />
+    </div>
+  );
 }
 
 export default App;
