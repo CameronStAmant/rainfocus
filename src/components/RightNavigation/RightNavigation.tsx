@@ -1,4 +1,5 @@
 import styles from "./rightNavigation.module.scss";
+import searchIcon from "../../assets/search.svg";
 
 const EVENT_TITLE = "RainFocus Summit";
 const EVENT_DETAILS = "Lehi, UT • December 15th";
@@ -10,6 +11,21 @@ const RightNavigation = () => {
         <h5 className={styles.eventTitle}>{EVENT_TITLE}</h5>
         <h6 className={styles.eventDetails}>{EVENT_DETAILS}</h6>
       </div>
+      <form className={styles.nosubmit}>
+        <img
+          className={styles.searchIcon}
+          src={searchIcon}
+          alt=""
+          aria-hidden="true"
+        />
+        <input
+          type="search"
+          name="search"
+          id="search"
+          className={styles.nosubmit}
+          placeholder="Search"
+        />
+      </form>
     </div>
   );
 };
