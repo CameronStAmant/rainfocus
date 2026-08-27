@@ -1,11 +1,11 @@
-import styles from "./rightNavigation.module.scss";
+import styles from "./navigationMenu.module.scss";
 import searchIcon from "../../assets/search.svg";
 import MegaNav from "../MegaNav/MegaNav";
 
 const EVENT_TITLE = "RainFocus Summit";
 const EVENT_DETAILS = "Lehi, UT • December 15th";
 
-const RightNavigation = () => {
+const NavigationMenu = () => {
   return (
     <div className={styles.root}>
       <div className={styles.eventDetailsContainer}>
@@ -33,4 +33,4 @@ const RightNavigation = () => {
   );
 };
 
-export default RightNavigation;
+export default NavigationMenu;

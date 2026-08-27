@@ -1,9 +1,9 @@
-import styles from "./leftNavigation.module.scss";
+import styles from "./globalNavigation.module.scss";
 import rainFocusLogo from "../../assets/NavLogo.svg";
 import eventLogo from "../../assets/eventLogo.svg";
 import profilePicture from "../../assets/profilePicture.png";
 
-const LeftNavigation = () => {
+const GlobalNavigation = () => {
   return (
     <div className={styles.root}>
       <div className={styles.logoContainer}>
@@ -19,4 +19,4 @@ const LeftNavigation = () => {
   );
 };
 
-export default LeftNavigation;
+export default GlobalNavigation;

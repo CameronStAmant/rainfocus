@@ -1,0 +1,61 @@
+.root {
+  padding: 21px 0 16px;
+  width: 61px;
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  justify-content: space-between;
+  align-items: end;
+  border-right: solid 1px rgb(203, 198, 222);
+
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 0.3125rem;
+
+    .eventLogo {
+      padding-left: 0.875rem;
+      padding-right: 0.875rem;
+    }
+  }
+
+  .profilePicture {
+    justify-self: center;
+  }
+
+  @media (max-width: 650px) {
+    padding: 0 1rem;
+    grid-auto-flow: column;
+    width: 100%;
+    height: 3.8125rem;
+    border-right: none;
+    border-bottom: solid 1px rgb(203, 198, 222);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    .logoContainer {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 0.625;
+
+      > img:first-child {
+        width: 1.875rem;
+        height: 2.5rem;
+      }
+
+      .eventLogo {
+        width: 2rem;
+        height: 2rem;
+        padding: 0;
+      }
+    }
+
+    .profilePicture {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

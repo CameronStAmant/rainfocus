@@ -1,12 +1,12 @@
-import LeftNavigation from "../LeftNavigation/LeftNavigation";
-import RightNavigation from "../RightNavigation/RightNavigation";
+import GlobalNavigation from "../GlobalNavigation/GlobalNavigation";
+import NavigationMenu from "../NavigationMenu/NavigationMenu";
 import styles from "./navigation.module.scss";
 
 const Navigation = () => {
   return (
     <div className={styles.root}>
-      <LeftNavigation />
-      <RightNavigation />
+      <GlobalNavigation />
+      <NavigationMenu />
     </div>
   );
 };
