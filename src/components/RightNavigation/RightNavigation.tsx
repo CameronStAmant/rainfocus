@@ -1,5 +1,6 @@
 import styles from "./rightNavigation.module.scss";
 import searchIcon from "../../assets/search.svg";
+import MegaNav from "../MegaNav/MegaNav";
 
 const EVENT_TITLE = "RainFocus Summit";
 const EVENT_DETAILS = "Lehi, UT • December 15th";
@@ -26,6 +27,8 @@ const RightNavigation = () => {
           placeholder="Search"
         />
       </form>
+
+      <MegaNav />
     </div>
   );
 };
