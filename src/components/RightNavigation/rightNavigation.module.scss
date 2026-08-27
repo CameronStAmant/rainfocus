@@ -1,0 +1,15 @@
+.root {
+  border-right: 1px solid rgb(203, 198, 222);
+  width: 13.3125rem;
+  padding: 1.0625rem 1.0625rem;
+
+  .eventTitle {
+    font-weight: 700;
+  }
+
+  .eventDetails {
+    padding: 0.8125rem 0;
+    font-weight: 400;
+    font-size: 0.625rem;
+  }
+}
