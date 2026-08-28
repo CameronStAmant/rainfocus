@@ -1,19 +1,21 @@
+@use "@/styles/variables" as vars;
+
 .root {
   .header {
-    padding: 2.125rem 0 2.5rem;
-    border-bottom: solid 1px rgb(203, 198, 222);
+    padding: vars.$space-padding-header 0 vars.$space-xl;
+    border-bottom: solid vars.$border-width vars.$border-color;
     p {
-      padding-top: 0.75rem;
+      padding-top: vars.$space-md;
     }
   }
 
   .section {
-    padding-top: 1.4375rem;
-    padding-bottom: 1.4375rem;
+    padding-top: vars.$space-lg;
+    padding-bottom: vars.$space-lg;
 
     .sectionHeader {
       display: flex;
-      gap: 0.625rem;
+      gap: vars.$space-sm;
     }
   }
 }

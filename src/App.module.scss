@@ -1,3 +1,5 @@
+@use "@/styles/variables" as vars;
+
 .root {
   display: grid;
   grid-auto-flow: column;
@@ -5,7 +7,7 @@
   font-family: "Inter", sans-serif;
   color: rgb(57, 53, 81);
 
-  @media (max-width: 768px) {
+  @media (max-width: vars.$bp-desktop) {
     display: block;
   }
 }

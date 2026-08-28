@@ -1,11 +1,13 @@
+@use "@/styles/variables" as vars;
+
 .root {
   padding: 1.3125rem 0 1rem;
-  width: 3.8125rem;
+  width: vars.$nav-width;
   display: grid;
   grid-template-rows: min-content 1fr;
   justify-content: space-between;
   align-items: end;
-  border-right: solid 1px rgb(203, 198, 222);
+  border-right: solid vars.$border-width vars.$border-color;
 
   .logoContainer {
     display: flex;
@@ -13,11 +15,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 0.3125rem;
+    gap: vars.$space-xs;
 
     .eventLogo {
-      padding-left: 0.875rem;
-      padding-right: 0.875rem;
+      padding-left: vars.$space-sm;
+      padding-right: vars.$space-sm;
     }
   }
 
@@ -26,13 +28,13 @@
     justify-self: center;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: vars.$bp-desktop) {
     padding: 0 1rem;
     grid-auto-flow: column;
     width: 100%;
-    height: 3.8125rem;
+    height: vars.$nav-width;
     border-right: none;
-    border-bottom: solid 1px rgb(203, 198, 222);
+    border-bottom: solid vars.$border-width vars.$border-color;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr auto;
     align-items: center;

@@ -1,3 +1,5 @@
+@use "@/styles/variables" as vars;
+
 .root {
-  padding: 2.5rem 3rem;
+  padding: vars.$space-xl vars.$space-2xl;
 }

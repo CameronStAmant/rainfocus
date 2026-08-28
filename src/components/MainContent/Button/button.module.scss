@@ -2,14 +2,14 @@
 
 .root {
   padding: vars.$space-xs 0.9375rem;
-  border-radius: 0.25rem;
+  border-radius: vars.$border-radius-sm;
   border: none;
-  font-size: 0.875rem;
+  font-size: vars.$font-size-md;
   height: min-content;
   cursor: pointer;
 
-  background-color: #5c00dc;
-  color: #fff;
+  background-color: vars.$accent;
+  color: vars.$bg-white;
   font-weight: 700;
   width: max-content;
 }

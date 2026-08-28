@@ -1,13 +1,15 @@
+@use "@/styles/variables" as vars;
+
 .root {
   display: grid;
-  grid-template-columns: 5.9375rem 1fr 6.3125rem;
+  grid-template-columns: vars.$icon-size 1fr vars.$header-icon-width;
   justify-content: start;
   gap: 1.1875rem;
   grid-auto-flow: column;
 
   .eventLogo {
-    height: 5.9375rem;
-    width: 5.9375rem;
+    height: vars.$icon-size;
+    width: vars.$icon-size;
   }
 
   .eventDetails {
@@ -15,7 +17,7 @@
 
     .title {
       font-weight: 300;
-      padding-bottom: 0.125rem;
+      padding-bottom: vars.$space-gap-sm;
     }
 
     .date,
@@ -25,7 +27,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: vars.$bp-desktop) {
   .root {
     grid-auto-flow: row;
     grid-template-areas:
@@ -44,11 +46,11 @@
       grid-area: edit;
     }
 
-    grid-template-columns: 5.9375rem 1fr;
+    grid-template-columns: vars.$icon-size 1fr;
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: vars.$bp-mobile) {
   .root {
     justify-content: center;
     grid-template-columns: 1fr;

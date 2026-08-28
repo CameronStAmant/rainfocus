@@ -1,0 +1,45 @@
+// Spacing scale (in rem, assuming 16px base)
+$space-xs: 0.3125rem;
+$space-sm: 0.625rem;
+$space-md: 0.75rem;
+$space-lg: 1.4375rem;
+$space-xl: 2.5rem;
+$space-2xl: 3rem;
+
+// Additional spacing values
+$space-gap-sm: 0.25rem;
+$space-gap-md: 0.5rem;
+$space-gap-lg: 1rem;
+$space-gap-xl: 2rem;
+$space-padding-header: 2.125rem;
+
+// Component sizes
+$nav-width: 3.8125rem;
+$menu-width: 13.3125rem;
+$icon-size: 5.9375rem;
+$header-icon-width: 6.3125rem;
+$card-min-height: 7.375rem;
+
+// Font sizes
+$font-size-sm: 0.625rem;
+$font-size-xs: 0.75rem;
+$font-size-md: 0.875rem;
+$font-size-lg: 0.9375rem;
+
+// Border
+$border-width: 1px;
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+
+// Breakpoints
+$bp-mobile: 475px;
+$bp-tablet: 500px;
+$bp-desktop: 768px;
+
+// Colors
+$border-color: rgb(203, 198, 222);
+$text-primary: rgb(34, 34, 34);
+$text-secondary: rgb(68, 68, 68);
+$accent: #5c00dc;
+$bg-light: #f5f5f5;
+$bg-white: #fff;
