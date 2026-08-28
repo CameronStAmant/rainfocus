@@ -1,6 +1,6 @@
 import styles from "./navigationMenu.module.scss";
-import searchIcon from "../../assets/search.svg";
-import MegaNav from "../MegaNav/MegaNav";
+import searchIcon from "@/assets/search.svg";
+import MegaNav from "./MegaNav/MegaNav/MegaNav";
 import { useState } from "react";
 
 const EVENT_TITLE = "RainFocus Summit";

@@ -1,5 +1,5 @@
-import GlobalNavigation from "../GlobalNavigation/GlobalNavigation";
-import NavigationMenu from "../NavigationMenu/NavigationMenu";
+import GlobalNavigation from "./GlobalNavigation/GlobalNavigation";
+import NavigationMenu from "./NavigationMenu/NavigationMenu";
 import styles from "./navigation.module.scss";
 
 const Navigation = () => {

@@ -1,7 +1,7 @@
 import styles from "./globalNavigation.module.scss";
-import rainFocusLogo from "../../assets/NavLogo.svg";
-import eventLogo from "../../assets/eventLogo.svg";
-import profilePicture from "../../assets/profilePicture.png";
+import rainFocusLogo from "@/assets/NavLogo.svg";
+import eventLogo from "@/assets/eventLogo.svg";
+import profilePicture from "@/assets/profilePicture.png";
 
 const GlobalNavigation = () => {
   return (

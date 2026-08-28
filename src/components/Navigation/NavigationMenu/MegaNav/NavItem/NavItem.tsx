@@ -1,6 +1,6 @@
-import type { dataProps } from "../types/Navigation";
-import circleIcon from "../../assets/circle.svg";
-import circleIconActive from "../../assets/circle-active.svg";
+import type { dataProps } from "../../../../types/Navigation";
+import circleIcon from "@/assets/circle.svg";
+import circleIconActive from "@/assets/circle-active.svg";
 import styles from "./navItem.module.scss";
 
 type Props = {
