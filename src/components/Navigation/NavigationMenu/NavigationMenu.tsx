@@ -1,13 +1,21 @@
 import styles from "./navigationMenu.module.scss";
 import searchIcon from "@/assets/search.svg";
 import MegaNav from "./MegaNav/MegaNav";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const EVENT_TITLE = "RainFocus Summit";
 const EVENT_DETAILS = "Lehi, UT • December 15th";
 
 const NavigationMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    document.body.style.overflow = isOpen ? "hidden" : "";
+
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [isOpen]);
 
   return (
     <>

@@ -70,6 +70,8 @@
     border-top: solid vars.$border-width vars.$border-color;
     top: 3.75rem;
     height: calc(100dvh - vars.$nav-width);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
 
   .root {
