@@ -2,6 +2,10 @@
 
 A React and TypeScript interface for the RainFocus Summit project, styled with Sass and built with Vite.
 
+## View it live
+
+View the project in your browser at https://cameronstamant.github.io/rainfocus/.
+
 ## Getting started
 
 Install the dependencies:
