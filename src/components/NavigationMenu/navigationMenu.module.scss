@@ -1,3 +1,7 @@
+.menuButton {
+  display: none;
+}
+
 .root {
   border-right: 1px solid rgb(203, 198, 222);
   width: 13.3125rem;
@@ -39,5 +43,35 @@
         color: #777;
       }
     }
+  }
+}
+
+@media (max-width: 650px) {
+  .menuButton {
+    display: block;
+    position: fixed;
+    right: 3.375rem;
+    top: 0.25rem;
+    border: none;
+    background-color: white;
+    font-size: 1.875rem;
+  }
+
+  .root,
+  .open {
+    position: absolute;
+    background-color: white;
+    border-top: solid 1px rgb(203, 198, 222);
+    top: 3.75rem;
+    height: 100%;
+    transition: transform 1s;
+  }
+
+  .root {
+    transform: translateX(-100%);
+  }
+
+  .open {
+    transform: translateX(0%);
   }
 }
