@@ -66,6 +66,7 @@ const NavigationMenu = () => {
         ref={dialogRef}
         id="navigation-menu"
         className={styles.root}
+        open={!isMobile}
         aria-label="Navigation menu"
       >
         <button
