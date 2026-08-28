@@ -23,20 +23,14 @@ const NavigationMenu = () => {
           <h5 className={styles.eventTitle}>{EVENT_TITLE}</h5>
           <h6 className={styles.eventDetails}>{EVENT_DETAILS}</h6>
         </div>
-        <form className={styles.nosubmit}>
+        <form>
           <img
             className={styles.searchIcon}
             src={searchIcon}
             alt=""
             aria-hidden="true"
           />
-          <input
-            type="search"
-            name="search"
-            id="search"
-            className={styles.nosubmit}
-            placeholder="Search"
-          />
+          <input type="search" name="search" id="search" placeholder="Search" />
         </form>
 
         <MegaNav />
