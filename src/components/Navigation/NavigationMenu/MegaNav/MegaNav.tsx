@@ -1,7 +1,7 @@
 import styles from "./megaNav.module.scss";
-import type { NavigationItemData } from "../../../../types/Navigation";
 import NavItem from "../NavItem/NavItem";
 import { useState } from "react";
+import type { NavigationItemData } from "../../../types/Navigation";
 
 const DATA: NavigationItemData[] = [
   {
