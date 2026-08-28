@@ -19,7 +19,17 @@ const NavigationMenu = () => {
       >
         ☰
       </button>
-      <div className={`${styles.root} ${isOpen ? styles.open : ""}`}>
+      <div
+        className={`${styles.root} ${isOpen ? styles.open : ""}`}
+        onBlur={(event) => {
+          if (
+            !(event.relatedTarget instanceof Node) ||
+            !event.currentTarget.contains(event.relatedTarget)
+          ) {
+            setIsOpen(false);
+          }
+        }}
+      >
         <div className={styles.eventDetailsContainer}>
           <h5 className={styles.eventTitle}>{EVENT_TITLE}</h5>
           <h6 className={styles.eventDetails}>{EVENT_DETAILS}</h6>

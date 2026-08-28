@@ -61,6 +61,7 @@
     border: none;
     background-color: vars.$bg-white;
     font-size: 1.875rem;
+    cursor: pointer;
   }
 
   .root {
@@ -73,9 +74,11 @@
 
   .root {
     transform: translateX(-100%);
+    display: none;
   }
 
   .open {
     transform: translateX(0%);
+    display: block;
   }
 }
