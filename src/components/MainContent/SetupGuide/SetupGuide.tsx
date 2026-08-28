@@ -2,58 +2,59 @@ import Step from "../Step/Step";
 import styles from "./setupGuide.module.scss";
 import personPortal from "@/assets/personPortal.svg";
 import computerIcon from "@/assets/computer.svg";
-import logicArrowIcon from "@/assets/logic-arrow.svg";
-import addCircleOutline from "@/assets/add-circle-outline.svg";
+import logicArrowIcon from "@/assets/logicArrow.svg";
+import addCircleOutline from "@/assets/addCircleOutline.svg";
 import type { BaseCard, FullWidthCard, SetupCard } from "../../types/Setup";
 
 const EVENT_SETUP_TITLE = "Event setup guide";
 const EVENT_SETUP_DETAILS =
   "See the available list of modules below. We suggest that you start with the attendee module.";
 
-const STEP_1: FullWidthCard = {
-  cardType: "fullWidth",
-  items: [
-    {
-      title: "General",
-      description: "Define Attendee types & attributes",
-    },
-    {
-      title: "Title",
-      description:
-        "Description that explains the value goes here. Description that explains the value goes here.",
-    },
-    {
-      title: "Title",
-      description:
-        "Description that explains the value goes here. Description that explains the value goes here.",
-    },
-  ],
-};
+const STEP_1: FullWidthCard = [
+  {
+    title: "General",
+    description: "Define Attendee types & attributes",
+    id: 1,
+  },
+  {
+    title: "Title",
+    description:
+      "Description that explains the value goes here. Description that explains the value goes here.",
+    id: 2,
+  },
+  {
+    title: "Title",
+    description:
+      "Description that explains the value goes here. Description that explains the value goes here.",
+    id: 3,
+  },
+];
 
 const STEP_2: SetupCard[] = [
   {
     icon: logicArrowIcon,
     title: "Attendee Registration",
     description: "Start by creating a general registration workflow",
-    cardType: "default",
+    id: 1,
   },
   {
     icon: logicArrowIcon,
     title: "Attendee Registration",
     description: "Start by creating a general registration workflow",
-    cardType: "default",
+    id: 2,
   },
   {
     icon: logicArrowIcon,
     title: "Attendee Registration",
     description: "Start by creating a general registration workflow",
-    cardType: "default",
+    id: 3,
   },
 ];
 
 const STEP_2_NEW_CARD: BaseCard = {
   icon: addCircleOutline,
   description: "Add Registration Workflow",
+  id: 1,
 };
 
 const STEP_3: SetupCard[] = [
@@ -62,7 +63,7 @@ const STEP_3: SetupCard[] = [
     title: "Attendee Portal",
     description:
       "Manage the portal that attendees will see after they've register for your event.",
-    cardType: "default",
+    id: 1,
   },
 ];
 

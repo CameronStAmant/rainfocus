@@ -1,6 +1,6 @@
 import styles from "./megaNav.module.scss";
 import type { dataProps } from "../../../../types/Navigation";
-import NavItem from "../NavItem/NavItem";
+import NavItem from "../../../../NavItem/NavItem";
 import { useState } from "react";
 
 const DATA: dataProps[] = [

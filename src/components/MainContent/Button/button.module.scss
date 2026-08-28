@@ -1,14 +1,15 @@
+@use "@/styles/variables" as vars;
+
 .root {
-  padding: 0.3125rem 0.9375rem;
+  padding: vars.$space-xs 0.9375rem;
   border-radius: 0.25rem;
   border: none;
   font-size: 0.875rem;
   height: min-content;
+  cursor: pointer;
 
-  &.primary {
-    background-color: #5c00dc;
-    color: #fff;
-    font-weight: 700;
-    width: max-content;
-  }
+  background-color: #5c00dc;
+  color: #fff;
+  font-weight: 700;
+  width: max-content;
 }

@@ -1,17 +1,15 @@
 export type BaseCard = {
   icon: string;
   description: string;
+  id: number;
 };
 
 export type SetupCard = BaseCard & {
   title: string;
-  cardType: "default";
 };
 
 export type FullWidthCard = {
-  cardType: "fullWidth";
-  items: {
-    title: string;
-    description: string;
-  }[];
-};
+  title: string;
+  description: string;
+  id: number;
+}[];

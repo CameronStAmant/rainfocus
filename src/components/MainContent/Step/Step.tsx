@@ -9,7 +9,37 @@ type Props = {
   addWorkflow?: BaseCard;
 };
 
-type DefaultSetupCard = Extract<SetupCard, { cardType: "default" }>;
+const renderDefaultCard = ({ icon, title, description, id }: SetupCard) => {
+  return (
+    <div className={styles.defaultCard} key={id}>
+      <img src={icon} alt="" />
+      <h5>{title}</h5>
+      <p>{description}</p>
+    </div>
+  );
+};
+
+const renderAddCard = ({ icon, description }: BaseCard) => {
+  return (
+    <div className={styles.addNewCard}>
+      <img src={icon} alt="" />
+      <p>{description}</p>
+    </div>
+  );
+};
+
+const renderFullWidthCard = (card: FullWidthCard) => {
+  return (
+    <div className={styles.fullWidthCard}>
+      {card.map(({ title, description, id }) => (
+        <div key={id}>
+          <h5>{title}</h5>
+          <p>{description}</p>
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const Step = ({
   stepCount,
@@ -18,38 +48,6 @@ const Step = ({
   fullCardDetails,
   addWorkflow,
 }: Props) => {
-  const defaultCard = ({ icon, title, description }: DefaultSetupCard) => {
-    return (
-      <div className={styles.defaultCard}>
-        <img src={icon} alt="" />
-        <h5>{title}</h5>
-        <p>{description}</p>
-      </div>
-    );
-  };
-
-  const addCard = ({ icon, description }: BaseCard) => {
-    return (
-      <div className={styles.addNewCard}>
-        <img src={icon} alt="" />
-        <p>{description}</p>
-      </div>
-    );
-  };
-
-  const renderFullWidthCard = (card: FullWidthCard) => {
-    return (
-      <div className={styles.fullWidthCard}>
-        {card.items.map(({ title, description }) => (
-          <div key={title}>
-            <h5>{title}</h5>
-            <p>{description}</p>
-          </div>
-        ))}
-      </div>
-    );
-  };
-
   return (
     <div className={styles.root}>
       <div className={styles.details}>
@@ -58,11 +56,8 @@ const Step = ({
       </div>
       <div className={styles.cards}>
         {fullCardDetails && renderFullWidthCard(fullCardDetails)}
-        {cardDetails &&
-          cardDetails.map((card) => {
-            return defaultCard(card);
-          })}
-        {addWorkflow && addCard(addWorkflow)}
+        {cardDetails && cardDetails.map((card) => renderDefaultCard(card))}
+        {addWorkflow && renderAddCard(addWorkflow)}
       </div>
     </div>
   );

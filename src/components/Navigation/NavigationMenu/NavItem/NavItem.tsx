@@ -1,6 +1,6 @@
-import type { dataProps } from "../../../../types/Navigation";
+import type { NavigationItemData } from "../../../types/Navigation";
 import circleIcon from "@/assets/circle.svg";
-import circleIconActive from "@/assets/circle-active.svg";
+import circleIconActive from "@/assets/circleActive.svg";
 import styles from "./navItem.module.scss";
 
 type Props = {
@@ -8,7 +8,7 @@ type Props = {
   setIsActive: (isActive: number | null) => void;
   openMenuId: number | null;
   setOpenMenuId: (id: number | null) => void;
-  item: dataProps;
+  item: NavigationItemData;
   isSubMenu?: boolean;
 };
 
@@ -42,7 +42,7 @@ const NavItem = ({
         {!isSubMenu && (
           <img
             src={isActive === item.id ? circleIconActive : circleIcon}
-            alt="circle icon"
+            alt=""
           />
         )}
         <span className={styles.navItemText}>{item.title}</span>

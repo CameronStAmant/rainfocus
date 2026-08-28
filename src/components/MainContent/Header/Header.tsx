@@ -15,7 +15,7 @@ const Header = () => {
         <span className={styles.date}>{EVENT_DATE}</span>
         <span className={styles.location}>{EVENT_LOCATION}</span>
       </div>
-      <Button className={styles.button} text={"Edit event"} type={"primary"} />
+      <Button className={styles.button} text={"Edit event"} />
     </div>
   );
 };

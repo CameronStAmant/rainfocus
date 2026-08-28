@@ -10,6 +10,8 @@
 
     .stepCount {
       font-weight: 600;
+      font-size: 0.9375rem;
+      align-self: center;
       color: rgb(34, 34, 34);
     }
 
@@ -27,6 +29,7 @@
     .defaultCard,
     .addNewCard,
     .fullWidthCard {
+      cursor: pointer;
       display: grid;
       padding: 1.4375rem 1.9375rem;
       min-height: 7.375rem;
@@ -74,6 +77,7 @@
     .fullWidthCard {
       grid-column: 1 / -1;
       grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
       grid-template-areas:
         "title"
         "description";
@@ -95,7 +99,6 @@
 
       .fullWidthCard {
         grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
       }
     }
   }

@@ -2,15 +2,12 @@ import styles from "./button.module.scss";
 
 type Props = {
   text: string;
-  type: "primary";
   className: string;
 };
 
-const Button = ({ text, type, className }: Props) => {
+const Button = ({ text, className }: Props) => {
   return (
-    <button
-      className={`${styles.root} ${type === "primary" ? styles.primary : ""} ${className ? className : ""}`}
-    >
+    <button className={`${styles.root} ${className ? className : ""}`}>
       {text}
     </button>
   );

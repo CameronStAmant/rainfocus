@@ -1,4 +1,4 @@
-export type dataProps = {
+export type NavigationItemData = {
   title: string;
   id: number;
   subMenus?: {
