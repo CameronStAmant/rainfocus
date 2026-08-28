@@ -1,0 +1,19 @@
+.root {
+  .header {
+    padding: 2.125rem 0 2.5rem;
+    border-bottom: solid 1px rgb(203, 198, 222);
+    p {
+      padding-top: 0.75rem;
+    }
+  }
+
+  .section {
+    padding-top: 1.4375rem;
+    padding-bottom: 1.4375rem;
+
+    .sectionHeader {
+      display: flex;
+      gap: 0.625rem;
+    }
+  }
+}

@@ -8,13 +8,14 @@ const EVENT_DETAILS = "Lehi, UT • December 15th";
 
 const NavigationMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <>
       <button
         className={styles.menuButton}
         type="button"
         aria-label="Toggle navigation menu"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setIsOpen((current) => !current)}
       >
         ☰
       </button>

@@ -57,14 +57,12 @@
     font-size: 1.875rem;
   }
 
-  .root,
-  .open {
+  .root {
     position: absolute;
     background-color: white;
     border-top: solid 1px rgb(203, 198, 222);
     top: 3.75rem;
-    height: 100%;
-    transition: transform 1s;
+    height: calc(100dvh - 3.8125rem);
   }
 
   .root {
