@@ -23,7 +23,7 @@ const NavigationMenu = () => {
           <h5 className={styles.eventTitle}>{EVENT_TITLE}</h5>
           <h6 className={styles.eventDetails}>{EVENT_DETAILS}</h6>
         </div>
-        <form>
+        <form onSubmit={(e) => e.preventDefault()}>
           <img
             className={styles.searchIcon}
             src={searchIcon}
