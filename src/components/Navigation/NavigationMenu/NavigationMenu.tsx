@@ -16,7 +16,6 @@ const NavigationMenu = () => {
     const updateIsMobile = () => {
       setIsMobile(mediaQuery.matches);
 
-      console.log(dialogRef.current);
       if (!mediaQuery.matches && dialogRef.current?.matches(":modal")) {
         dialogRef.current.close();
         setIsOpen(false);
