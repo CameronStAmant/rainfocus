@@ -1,0 +1,60 @@
+.root {
+  display: grid;
+  grid-template-columns: 5.9375rem 1fr 6.3125rem;
+  justify-content: start;
+  gap: 1.1875rem;
+  grid-auto-flow: column;
+
+  .eventLogo {
+    height: 5.9375rem;
+    width: 5.9375remc;
+  }
+
+  .eventDetails {
+    display: grid;
+
+    .title {
+      font-weight: 300;
+      padding-bottom: 0.125rem;
+    }
+
+    .date,
+    .location {
+      color: rgb(57, 53, 81);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    grid-auto-flow: row;
+    grid-template-areas:
+      "title details"
+      "title edit";
+
+    .eventLogo {
+      grid-area: title;
+    }
+
+    .eventDetails {
+      grid-area: details;
+    }
+
+    .button {
+      grid-area: edit;
+    }
+
+    grid-template-columns: 5.9375rem 1fr;
+  }
+}
+
+@media (max-width: 475px) {
+  .root {
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "details"
+      "edit";
+  }
+}

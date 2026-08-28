@@ -1,0 +1,14 @@
+.root {
+  padding: 0.3125rem 0.9375rem;
+  border-radius: 0.25rem;
+  border: none;
+  font-size: 0.875rem;
+  height: min-content;
+
+  &.primary {
+    background-color: #5c00dc;
+    color: #fff;
+    font-weight: 700;
+    width: max-content;
+  }
+}

@@ -5,6 +5,8 @@
   min-height: 100dvh;
 
   @media (max-width: 768px) {
+    height: 3.8125rem;
+    min-height: 3.8125rem;
     grid-template-columns: 1fr;
     grid-template-rows: 3.8125rem 1fr;
   }
