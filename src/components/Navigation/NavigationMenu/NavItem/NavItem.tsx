@@ -39,13 +39,15 @@ const NavItem = ({
         key={item.id}
         onClick={handleClick}
       >
-        {!isSubMenu && (
-          <img
-            src={isActive === item.id ? circleIconActive : circleIcon}
-            alt=""
-          />
-        )}
-        <span className={styles.navItemText}>{item.title}</span>
+        <a href="#">
+          {!isSubMenu && (
+            <img
+              src={isActive === item.id ? circleIconActive : circleIcon}
+              alt=""
+            />
+          )}
+          <span className={styles.navItemText}>{item.title}</span>
+        </a>
       </li>
       {item.subMenus && openMenuId === item.id && (
         <ul className={styles.subMenu}>
